@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian News Portal</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+  <h1>Indian News Portal</h1>
+  <nav id="category-nav">
+      <button class="active" data-category="general">India</button>
+      <button data-category="business">Business</button>
+      <button data-category="technology">Technology</button>
+      <button data-category="sports">Sports</button>
+      <button data-category="entertainment">Entertainment</button>
+  </nav>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<!-- Hero Section with 3D Parallax -->
+<section class="hero">
+  <div class="hero-layer back" style="background-image:url('https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1500&q=80');"></div>
+  <div class="hero-layer middle" style="background-image:url('https://images.unsplash.com/photo-1581090700227-1513fbdfe1fa?auto=format&fit=crop&w=1500&q=80');"></div>
+  <div class="hero-layer front" style="background-image:url('https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1500&q=80');"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h2>Latest Indian News</h2>
+    <p>Stay updated with India at your fingertips</p>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search Google News India...">
+      <button id="searchBtn">Search</button>
+    </div>
+  </div>
+</section>
+
+<!-- Carousel for Top Headlines -->
+<section class="hero-carousel">
+  <div id="carousel-slides">
+    <div class="carousel-slide">
+      <img src="https://images.unsplash.com/photo-1600790294567-3cf4886b2f2c?auto=format&fit=crop&w=1500&q=80" alt="India Parliament">
+      <div class="carousel-slide-content">
+        <h2>Politics Today</h2>
+        <p>Latest updates from Indian Parliament and government policies.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <img src="https://images.unsplash.com/photo-1581093448792-4c601fe1d55d?auto=format&fit=crop&w=1500&q=80" alt="Stock Market">
+      <div class="carousel-slide-content">
+        <h2>Business News</h2>
+        <p>Latest stock market updates and economic insights.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="carousel-slide">
+      <img src="https://images.unsplash.com/photo-1565372911080-3f62e0b49f1b?auto=format&fit=crop&w=1500&q=80" alt="Technology News">
+      <div class="carousel-slide-content">
+        <h2>Technology Updates</h2>
+        <p>Top tech stories from India and around the world.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button id="prev">&#10094;</button>
+    <button id="next">&#10095;</button>
+  </div>
+  <div class="carousel-indicators" id="carousel-indicators">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+
+<!-- Main News Section -->
+<section class="news-container" id="news-container">
+  <div class="news-card show">
+    <img src="https://images.unsplash.com/photo-1606788075760-6a0e2efba7b2?auto=format&fit=crop&w=400&q=80" alt="News 1">
+    <div class="news-card-content">
+      <h3>India Election Updates</h3>
+      <p>Key developments from across India in politics and governance.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+  <div class="news-card show">
+    <img src="https://images.unsplash.com/photo-1606788075761-6a0e2efba7b3?auto=format&fit=crop&w=400&q=80" alt="News 2">
+    <div class="news-card-content">
+      <h3>Economic Insights</h3>
+      <p>Latest trends in the Indian economy and financial markets.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+  <div class="news-card show">
+    <img src="https://images.unsplash.com/photo-1606788075762-6a0e2efba7b4?auto=format&fit=crop&w=400&q=80" alt="News 3">
+    <div class="news-card-content">
+      <h3>Technology in India</h3>
+      <p>How Indian startups and IT developments are shaping the future.</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+</section>
+
+<!-- Popular News Section -->
+<section class="section-container">
+  <h2>Popular News</h2>
+  <div class="news-container" id="popular-news-container">
+    <div class="news-card show">
+      <img src="https://images.unsplash.com/photo-1581092344929-7d547c0b784e?auto=format&fit=crop&w=400&q=80" alt="Popular 1">
+      <div class="news-card-content">
+        <h3>Bollywood Buzz</h3>
+        <p>Latest entertainment and celebrity updates from India.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="news-card show">
+      <img src="https://images.unsplash.com/photo-1581092332052-547c7b3b57e3?auto=format&fit=crop&w=400&q=80" alt="Popular 2">
+      <div class="news-card-content">
+        <h3>Sports Highlights</h3>
+        <p>Top cricket, football, and other sports news from India.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Recommended News Section -->
+<section class="section-container">
+  <h2>Recommended for You</h2>
+  <div class="news-container" id="recommended-news-container">
+    <div class="news-card show">
+      <img src="https://images.unsplash.com/photo-1598300059477-bc54c9051a21?auto=format&fit=crop&w=400&q=80" alt="Recommended 1">
+      <div class="news-card-content">
+        <h3>Startups in India</h3>
+        <p>Innovative startups and business ideas transforming India.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <div class="news-card show">
+      <img src="https://images.unsplash.com/photo-1581093448792-4c601fe1d55d?auto=format&fit=crop&w=400&q=80" alt="Recommended 2">
+      <div class="news-card-content">
+        <h3>Tech Trends</h3>
+        <p>Top technology news and innovations from Indian companies.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Back to Top Button -->
+<button id="backToTop">↑ Top</button>
+
+<!-- Footer -->
+<footer>
+&copy; 2025 Indian News Portal
+</footer>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="news.js"></script>
+
+</body>
+</html>
